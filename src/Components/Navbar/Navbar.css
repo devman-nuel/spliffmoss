@@ -1,0 +1,34 @@
+.navbar{
+    width: 100%;
+    position: fixed;
+    padding: 1% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #043468;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+}
+
+.logo img{
+    width: 50px;
+    object-fit: cover;
+}
+
+.logo p{
+    color: #F4F4F4;
+    font-family: 'Monument-Regular';
+}
+
+.navbar div button{
+    padding: 12px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+

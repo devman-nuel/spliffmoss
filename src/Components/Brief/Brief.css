@@ -1,0 +1,11 @@
+.brief{
+    margin-top: 80px;
+    padding: 0 5%;
+}
+
+.brief h2{
+    font-size: 40px;
+    line-height: 60px;
+    font-family: 'Monument-Bold';
+    color: #3f3f3f;
+}
