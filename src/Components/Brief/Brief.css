@@ -1,11 +1,114 @@
 .brief{
-    margin-top: 80px;
-    padding: 0 5%;
+    background: #B65D3C;
+    margin-top: -5px;
+    overflow: hidden;
 }
 
-.brief h2{
+.brief-con{
+    display: flex;
+    padding: 7%;
+}
+
+.brief-con div{
+    width: 100%;
+    color: #F6E7DA;
+}
+
+.brief-con div span{
+    font-size: 14px;
+    font-family:'Aoenik-Regular';  
+}
+
+.brief-con div h2{
     font-size: 40px;
-    line-height: 60px;
-    font-family: 'Monument-Bold';
-    color: #3f3f3f;
+    line-height: 150%;
+    font-family:'Dela-Regular';
+}
+
+.brief-con div p{
+    font-family:'Aoenik-Regular';
+    font-size: 16px;
+    line-height: 150%;
+    color: #F6E7DA;
+}
+
+.brief-marquee{
+    padding-bottom: 7%;
+}
+
+.test-con {
+    display: flex;
+    gap: 20px;
+    width: max-content; /* Adjust width for continuous scroll */
+    animation: marquee 20s linear infinite;
+    position: relative;
+    align-items: center;
+    transition: all ease-in 0.3s;
+}
+
+.test-card {
+    max-width: 280px;
+    height: 200px;
+}
+
+.test-card img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.test-card p {
+     font-size: 16px;
+     margin-bottom: 10px;
+     color: #7c7c7c;
+     list-style: 24px;
+     font-family: 'Neue-Regular'
+}
+
+.test-card span {
+    font-size: 16px;
+    font-family: 'Neue-Medium';
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Scroll through half the content */
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .brief-con{
+        display: flex;
+        flex-direction: column;
+        padding: 15% 7%;
+    }
+
+    .brief-con div span{
+        font-size: 12px;
+        font-family:'Aoenik-Regular';  
+    }
+
+    
+    .brief-con div h2{
+        font-size: 28px;
+        line-height: 150%;
+        font-family:'Dela-Regular';
+    }
+
+    .brief-con div p{
+    margin-top: 20px;
+    }
+
+    .brief-marquee{
+        padding-bottom: 15%;
+    }
+
+
+     
 }

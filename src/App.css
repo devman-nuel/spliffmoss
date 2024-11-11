@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+h2{
+  letter-spacing: 1.5px;
+}
+
 
 @font-face {
   font-family:'Aoenik-Bold';

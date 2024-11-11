@@ -1,23 +1,57 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-function Navbar() {
-  return (
-    <div className='navbar'>
-            <div className='logo'>
-             <img src='https://res.cloudinary.com/dxnukbo0u/image/upload/v1720056644/Frame_1686553033_nw6h8x.png' alt=''></img>
-              <p>DevmanEnaWeb</p>
-            </div>
+const Navbar = () => {
+    const [showMenu, setShowMenu] = useState(false); // Track menu visibility
 
-            <div>
+    const toggleMenu = () => {
+        setShowMenu(!showMenu); // Toggle menu visibility
+    };
 
-            </div>
+    return (
+        <div className='nav'>
+            <div className='nav-container'>
+                <div className='navbar'>
+                    <div className='logo'>
+                        <Link to="/">RadiantSkin</Link>
+                    </div>
 
-            <div>
-                <button>Book a session</button>
+
+                    <div className='nav-btn'>
+                      <nav>
+                        <li><Link to="/">About Us</Link></li>
+                        <li><Link to="/">Products</Link></li>
+                        <li><Link to="/">FAQs</Link></li>
+                      </nav>
+                    
+                        <button>
+                            <Link to="/">Get in touch</Link>
+                        </button>
+                    </div>
+
+                    <div className='menu-toggle' onClick={toggleMenu}>
+                        <div className={showMenu ? "hamBox hamBoxOpen" : "hamBox"}>
+                            <span className={showMenu ? "lineTop spin" : "lineTop"}></span>
+                            <span className={showMenu ? "lineBottom spin" : "lineBottom"}></span>
+                        </div>
+                    </div>
+
+                    {showMenu && (
+                        <div className="fixed-component">
+                            <div className='menu-con'>
+                                <p>MENU</p>
+                                <Link to="/">About Us</Link>
+                                <Link to="/">Features</Link>
+                                <Link to="/">Products</Link>
+                                <button>Contact Us</button>
+                            </div>
+                        </div>
+                    )}
+                </div>
             </div>
-    </div>
-  )
+        </div>
+    );
 }
 
-export default Navbar
+export default Navbar;
