@@ -41,7 +41,11 @@
     font-family:'Aoenik-Regular';
 }
 
+
 @media screen and (max-width: 900px){
+    .product{
+        padding: 15% 7%;
+    }
     .product-con{
         display: flex;
         flex-direction: column;
