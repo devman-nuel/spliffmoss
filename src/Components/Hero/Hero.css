@@ -119,5 +119,6 @@
     .hero-right {
         flex-basis: 100%;
         padding: 0 7%;
+        margin-top: 60px;
     }
 }
