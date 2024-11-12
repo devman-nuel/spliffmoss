@@ -18,6 +18,20 @@ function Hero() {
               <p>New moisturizer out now worldwide <span>.</span></p>
               <p>New moisturizer out now worldwide <span>.</span></p>
               <p>New moisturizer out now worldwide <span>.</span></p>
+              <p>New moisturizer out now worldwide <span>.</span></p>
+              <p>New moisturizer out now worldwide <span>.</span></p>
+              <p>New moisturizer out now worldwide <span>.</span></p>
+              <p>New moisturizer out now worldwide <span>.</span></p>
+              <p>New moisturizer out now worldwide <span>.</span></p>
+              <p>New moisturizer out now worldwide <span>.</span></p>
+              <p>New moisturizer out now worldwide <span>.</span></p>
+              <p>New moisturizer out now worldwide <span>.</span></p>
+              <p>New moisturizer out now worldwide <span>.</span></p>
+              <p>New moisturizer out now worldwide <span>.</span></p>
+              <p>New moisturizer out now worldwide <span>.</span></p>
+              <p>New moisturizer out now worldwide <span>.</span></p>
+              <p>New moisturizer out now worldwide <span>.</span></p>
+              <p>New moisturizer out now worldwide <span>.</span></p>
               {/* More items as needed */}
             </div>      
           </div>
