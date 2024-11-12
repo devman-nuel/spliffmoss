@@ -4,7 +4,23 @@ import './Footer.css';
 function Footer() {
   return (
     <div className='footer'>
-      Footer
+      <div className='footer-con'>
+        <div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+        <div>
+          
+        </div>      
+      </div>
+
+      <div className='copy'>
+
+      </div>
     </div>
   )
 }
