@@ -19,20 +19,14 @@ function Hero() {
               <p>New moisturizer out now worldwide <span>.</span></p>
               <p>New moisturizer out now worldwide <span>.</span></p>
               <p>New moisturizer out now worldwide <span>.</span></p>
+            </div>      
+            <div className='marquee-content'>
+              {/* Duplicate content for continuous scroll effect */}
               <p>New moisturizer out now worldwide <span>.</span></p>
               <p>New moisturizer out now worldwide <span>.</span></p>
               <p>New moisturizer out now worldwide <span>.</span></p>
               <p>New moisturizer out now worldwide <span>.</span></p>
               <p>New moisturizer out now worldwide <span>.</span></p>
-              <p>New moisturizer out now worldwide <span>.</span></p>
-              <p>New moisturizer out now worldwide <span>.</span></p>
-              <p>New moisturizer out now worldwide <span>.</span></p>
-              <p>New moisturizer out now worldwide <span>.</span></p>
-              <p>New moisturizer out now worldwide <span>.</span></p>
-              <p>New moisturizer out now worldwide <span>.</span></p>
-              <p>New moisturizer out now worldwide <span>.</span></p>
-              <p>New moisturizer out now worldwide <span>.</span></p>
-              {/* More items as needed */}
             </div>      
           </div>
         </div>

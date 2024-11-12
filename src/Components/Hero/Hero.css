@@ -1,4 +1,4 @@
-.hero-con { 
+.hero-con {
     width: 100%;
     margin: 0 auto;
     padding-bottom: 0;
@@ -16,7 +16,8 @@
 
 .hero-left {
     flex-basis: 50%;
-    padding-top: 100px;
+    padding-top: 70px;
+    position: relative; /* Needed for absolute positioning within this container */
 }
 
 .hero-text {
@@ -42,25 +43,24 @@
 .marquee {
     background: #F8DDC6;
     height: 45px;
-    margin-top: 40px;
     overflow: hidden;
-    position: relative;
-    display: flex; /* Ensure it shows content */
-    align-items: center; /* Align content vertically */
-    justify-content: center; /* Center content horizontally */
+    position: absolute;
+    bottom: -70px; /* Adjust as needed to place it at the bottom of .hero-left */
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
 }
 
 .marquee-content {
     display: flex;
     gap: 30px;
-    position: absolute;
     white-space: nowrap;
     animation: scroll 15s linear infinite;
-    align-items: center;
 }
 
 .marquee-content p {
-    margin: 0; /* Remove any margin around paragraphs */
+    margin: 0;
     display: flex;
     align-items: center;
 }
@@ -75,12 +75,12 @@
     justify-content: center;
     align-items: center;
     font-weight: 900;
-    margin-left: 10px; /* Small spacing between text and span */
+    margin-left: 10px;
 }
 
 @keyframes scroll {
     from {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
     to {
         transform: translateX(-100%);
@@ -98,13 +98,8 @@
 
 @media screen and (max-width: 900px) {
     .hero {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         flex-direction: column;
         gap: 40px;
-        margin: 0 auto;
-        background: #F6E7DA;
         padding-bottom: 0;
     }
 
@@ -119,11 +114,6 @@
 
     .hero-left h2 {
         font-size: 28px;
-        line-height: 150%;
-        font-family: 'Dela-Regular';
-        background: -webkit-linear-gradient(#F58A62, #8B503B);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 
     .hero-right {

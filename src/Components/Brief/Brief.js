@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
 import './Brief.css';
 
 function Brief() {
+  
   return (
     <div className='brief'>
       <div className='brief-con'>
         <div>
           <span>OUR VALUES</span>
-          <h2>Our Philosophy</h2>
+          <h2 >Our Philosophy</h2>
         </div>
 
         <div>
