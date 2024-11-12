@@ -125,6 +125,10 @@
 
 
 @media screen and (max-width: 900px){
+    .footer{
+        margin-top: 15%;
+    }
+
     .footer-con{
         flex-wrap: wrap;
     }
@@ -140,7 +144,7 @@
     }
 
     .copy{
-        padding: 3% 7%;
+        padding: 4% 7%;
         background: #b1654a;
         color: #F6E7DA;
         margin-top: 60px;
